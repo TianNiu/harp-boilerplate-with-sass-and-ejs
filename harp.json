@@ -1,0 +1,9 @@
+{
+  "globals": {
+    "title": "dath harp Boilerplate",
+    "description": "A personal Harp Boilerplate with sass and ejs.",
+    "name": "thisiswoa",
+    "email": "",
+    "uri": ""
+  }
+}

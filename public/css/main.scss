@@ -1,0 +1,15 @@
+@import "_variables";
+@import "common/footer";
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body > main{
+	padding-top: 60px;
+}
+
+.page-max-width{
+	max-width: 1170px;
+}

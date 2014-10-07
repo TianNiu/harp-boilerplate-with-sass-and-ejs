@@ -1,0 +1,52 @@
+/* global style from bootstrap with some parts cut off*/
+// Core variables and mixins
+@import "_global/variables";
+@import "_global/mixins";
+
+// Reset and dependencies(use normalize)
+@import "_global/normalize";
+@import "_global/print";
+@import "_global/glyphicons";
+
+// Core CSS
+@import "_global/scaffolding";
+@import "_global/type";
+@import "_global/code";
+@import "_global/grid";
+/* remove tables,forms,buttons*/
+//@import "_global/tables";
+//@import "_global/forms";
+//@import "_global/buttons";
+
+// Components
+/* @import "_global/component-animations";
+@import "_global/dropdowns";
+@import "_global/button-groups";
+@import "_global/input-groups";
+@import "_global/navs";
+@import "_global/navbar";
+@import "_global/breadcrumbs";
+@import "_global/pagination";
+@import "_global/pager";
+@import "_global/labels";
+@import "_global/badges";
+@import "_global/jumbotron";
+@import "_global/thumbnails";
+@import "_global/alerts";
+@import "_global/progress-bars";
+@import "_global/media";
+@import "_global/list-group";
+@import "_global/panels";
+@import "_global/responsive-embed";
+@import "_global/wells";
+@import "_global/close"; */
+
+// Components w/ JavaScript
+/* @import "_global/modals";
+@import "_global/tooltip";
+@import "_global/popovers";
+@import "_global/carousel"; */
+
+// Utility classes
+@import "_global/utilities";
+@import "_global/responsive-utilities";

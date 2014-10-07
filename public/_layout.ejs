@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <!-- get param from the global harp.json-->
+	    <title><%= title %></title>
+	    <meta name="description" content="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- global with normalize included-->
+	    <link rel="stylesheet" href="css/global.css">
+	    <!-- page-->
+		<link rel="stylesheet" href="css/main.css">
+		<!-- polyfill for responsive-->
+		<!--[if lt IE 9]>
+		    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+		    <script>window.respond || document.write('<script src="/javascripts/vendors/respond.js">\x3C/script>')</script>
+		<![endif]-->
+		<!-- modernizr-->
+    	<script src="js/vendors/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    	<!-- YOUR HTML CONTENT BELOW-->
+
+		<!-- header-->
+		<!-- -->
+		<%//- partial('_partials/yourheaderhere.ejs') %>
+
+		<!-- main area-->
+		<div class="container-fluid page-max-width">
+			<%- yield %>
+		</div>
+
+		<!-- page 404 do not need footer, it is just a example-->
+		<% if(current.source !== '404') { %>
+		<!-- footer-->
+		<%- partial('_partials/footer.ejs') %>
+		<% } %>
+		
+		<!-- Bottom Script-->
+		<%- partial('_scripts.ejs') %>
+	</body>
+</html>
